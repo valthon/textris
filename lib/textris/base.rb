@@ -42,12 +42,12 @@ module Textris
     end
 
     def render_content
-      renderer = ::ApplicationController.renderer.new
+      renderer = ::ActionController::Base.renderer.new
 
       renderer.render(
         template: template_name,
         layout: false,
-        formats: [:html],
+        formats: [:text],
         locale: @locale,
         assigns: set_instance_variables_for_rendering
       )
