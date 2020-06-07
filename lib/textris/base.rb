@@ -48,6 +48,7 @@ module Textris
         template: template_name,
         layout: false,
         formats: [:html, :text],
+        formats: [:text],
         locale: @locale,
         assigns: set_instance_variables_for_rendering
       )
